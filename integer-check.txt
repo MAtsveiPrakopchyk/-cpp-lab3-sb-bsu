@@ -1,0 +1,25 @@
+#include<iostream> 
+using namespace std; 
+
+int main()
+{
+int k, i = 1, s_k = 0; double n;
+cout << " Enter the amount of integers  = "; 
+cin >> k;
+
+do {
+cout << "Enter integer number " << i << ": "; 
+cin >> n;
+
+while (n-(int)n!=0) //cheking if n is an integer
+    {cout << "Number isn't an integer" << endl; 
+cout << "Enter plz another number = "; 
+cin >> n;
+break;
+}
+
+s_k += n; i++; ;; calculating the sum of integers
+} while (i <= k);
+cout << " The total sum of  " << k << " integer's is: "  << s_k;
+return 0;
+}

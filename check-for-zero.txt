@@ -1,0 +1,24 @@
+#include<iostream> 
+using namespace std; 
+
+int main()
+{
+int i = 1, sum_k = 0, number; double k;
+cout << " Enter the amount of integers to sum = "; 
+cin >> k;
+
+if (k==0) {cout << "The sum can't be calculated : there are no integers " << endl; //first situation  // if k = 0
+}
+
+else //another situation
+
+   {
+do {
+cout << "Enter integer nr. " << i << ": "; 
+cin >> number;
+sum_k += number; i++; //total sum
+} while (i <= k);
+cout << " The total sum of " << k << " integers is: "  << sum_k; 
+}
+return 0;
+}
